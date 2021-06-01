@@ -6,13 +6,82 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/testing_my_first_application"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#1B591D" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700"
+            android:insetTop="10dp"
+            android:insetBottom="10dp"
+            android:text="@string/button_to_task2"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textStyle="bold"
+            app:icon="@android:mipmap/sym_def_app_icon" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:fontFamily="cursive"
+            android:hint="@string/please_enter_your_name"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textStyle="italic" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="ToggleButton"
+            android:textAllCaps="false"
+            android:textColor="#F44336"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:showText="true"
+            android:text="Switch test"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            style="@android:style/Widget.CompoundButton.CheckBox"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="#673AB7"
+            android:checked="false"
+            android:contentDescription="please mark the checkbox"
+            android:fontFamily="casual"
+            android:text="CheckBox"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textSize="16sp"
+            android:typeface="sans" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
